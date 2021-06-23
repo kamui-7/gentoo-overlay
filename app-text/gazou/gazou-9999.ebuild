@@ -9,6 +9,7 @@ inherit git-r3
 DESCRIPTION="A Japanese OCR application for Linux"
 HOMEPAGE="https://github.com/kamui-7/gazou"
 EGIT_REPO_URI="https://github.com/kamui-7/gazou.git"
+EGIT_SUBMODULES=()
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -20,6 +21,7 @@ DEPEND="
 	>=app-text/tesseract-4.0.0[tiff]
 	>=dev-qt/qtwidgets-5.10
 	dev-qt/qtx11extras
+	dev-qt/qhotkey
 "
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
